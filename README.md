@@ -1,5 +1,13 @@
 # Tensorui
 
+## Scripts
+
+Bash Scripts are added to the `tools/scripts` directory.
+
+Included scripts are:
+
+- tools/scripts/ignore-vercel-build.sh ignores the vercel build if the app is not affected by `nx affected`. Takes a single argument which is the app name.
+
 ## Tooling
 
 - [Commitlint](https://github.com/conventional-changelog/commitlint) with [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) preset.
