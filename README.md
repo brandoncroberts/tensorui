@@ -1,12 +1,16 @@
-
-
 # Tensorui
 
+## Tooling
+
+- [Commitlint](https://github.com/conventional-changelog/commitlint) with [@commitlint/config-conventional](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) preset.
+
+- [Husky](https://blog.typicode.com/) which runs the following as pre-commit hooks:
+
+`npx nx affected --target=lint && npx nx affected --target=test`
+
+- NX:
+
 This project was generated using [Nx](https://nx.dev).
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
-
-🔎 **Smart, Fast and Extensible Build System**
 
 ## Adding capabilities to your workspace
 
@@ -79,8 +83,6 @@ Run `nx graph` to see a diagram of the dependencies of your projects.
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
 
-
-
 ## ☁ Nx Cloud
 
 ### Distributed Computation Caching & Distributed Task Execution
@@ -92,3 +94,7 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
+
+```
+
+```
