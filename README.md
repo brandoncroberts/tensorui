@@ -8,6 +8,8 @@
 
 `npx nx affected --target=lint && npx nx affected --target=test`
 
+- Github Actions: Using [Nrwl CI Example](https://github.com/nrwl/ci) which runs on the main branch, and on all pull requests into the main branch.
+
 - NX:
 
 This project was generated using [Nx](https://nx.dev).
