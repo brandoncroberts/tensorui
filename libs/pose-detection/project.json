@@ -1,0 +1,43 @@
+{
+  "root": "libs/pose-detection",
+  "sourceRoot": "libs/pose-detection/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:rollup",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/pose-detection",
+        "tsConfig": "libs/pose-detection/tsconfig.lib.json",
+        "project": "libs/pose-detection/package.json",
+        "entryFile": "libs/pose-detection/src/index.ts",
+        "external": ["react/jsx-runtime"],
+        "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
+        "compiler": "babel",
+        "assets": [
+          {
+            "glob": "libs/pose-detection/README.md",
+            "input": ".",
+            "output": "."
+          }
+        ]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/pose-detection/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/pose-detection"],
+      "options": {
+        "jestConfig": "libs/pose-detection/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

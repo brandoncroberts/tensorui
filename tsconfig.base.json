@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@tensorui/pose-detection": ["libs/pose-detection/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
